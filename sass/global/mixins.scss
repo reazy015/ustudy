@@ -1,0 +1,18 @@
+@mixin hover-active{
+	opacity: 0.75;
+	transition: ease-in-out 0.25s;
+}
+@mixin button-mixin{
+	height: 60px;
+	width: 236px;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	background-color:  #2856b3;
+	box-shadow: 0px 10px 35px 0 rgba(13, 54, 135, 0.6);
+
+	font-size: 20px;
+	text-align: center;
+	color: $main-font-color;
+	cursor: pointer;
+}

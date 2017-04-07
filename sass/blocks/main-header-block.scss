@@ -1,0 +1,130 @@
+.main-header{
+	position: absolute;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 41px;
+	z-index: 10;
+	color: $main-font-color;
+
+	&-logo{
+		float: left;
+		margin-left: 11px;
+
+		&_img{
+			display: block;
+		}
+
+		&_comment{
+			font-size: 14px;
+			line-height: 2.33;
+		}
+	}
+
+	&-nav{
+		display: inline-block;
+		margin-left: 215px;
+
+		&_link{
+			position: relative;
+			display: inline-block;
+			text-decoration: none;
+			line-height: 3.33;
+			font-size: 18px;
+			font-weight: 500;
+			color: $main-font-color;
+      margin-right: 65px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			&:after{
+				position: absolute;
+				display: block;
+				content: '';
+				top: 26px;
+				right: -19px;
+				border: 4px solid transparent;
+				border-top: 6px solid $main-font-color;
+			}
+
+			&:hover{
+				@include hover-active;
+			}
+		}
+	}
+
+	&-userbox{
+		float: right;
+		position: relative;
+		width: 237px;
+		border-radius: 22.5px;
+		border: solid 1px rgba(255,255,255,0.25);
+		margin-right: -15px;
+		margin-top: 5px;
+		padding: 12px 26px 10px 23px;
+
+		&_enter{
+			display:inline-block;
+			text-decoration: none;
+			color: $main-font-color;
+			font-size: 18px;
+			font-weight: 500;
+			margin-right: 33px;
+
+			&:hover{
+				@include hover-active;
+			}
+		}
+
+		&_reg{
+			@extend .main-header-userbox_enter;
+			margin-right: 0;
+
+			&:hover{
+				@include hover-active;
+			}
+		}
+
+		&:after{
+			position: absolute;
+			display: block;
+			content: '';
+			top: 10px;
+			left: 35.5%;
+			width: 1px;
+			height: 26px;
+			background-color: rgba(255,255,255,0.25);
+		}
+	}
+
+	&-langbox{
+		position: absolute;
+		top: -22px;
+		right: 10px;
+		font-size: 11px;
+		font-weight: 600;
+		letter-spacing: 1.1px;
+
+		&_ru{
+			color: $main-font-color;
+			text-decoration: none;
+			text-transform: uppercase;
+			margin-right: 15px;
+
+			&:hover{
+				@include hover-active;
+			}
+		}
+
+		&_kz{
+			@extend .main-header-langbox_ru;
+			margin-right: 0;
+
+			&:hover{
+				@include hover-active;
+		}
+
+		}
+	}
+}

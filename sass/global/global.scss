@@ -1,0 +1,27 @@
+html{
+  // height: 100%;
+  // background-image: url('../images/Макет.jpg');
+  // background-position: 50% 0;
+  // background-repeat: no-repeat;
+}
+* {
+	box-sizing: border-box;
+}
+html,body{
+	margin: 0;
+  font-family: 'AvenirNext', sans-serif;
+
+	height: 100%;
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+.relative-helper{
+	position: relative;
+}
+.clearfix{
+  display: table;
+  content: '';
+  clear: both;
+}
